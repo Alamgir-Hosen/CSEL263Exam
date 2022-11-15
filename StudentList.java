@@ -58,14 +58,6 @@ public class StudentList {
                         new InputStreamReader(
                                 new FileInputStream("students.txt")));
                 String r = s.readLine();
-                //String i[] = r.split(",");
-                //boolean done = false;
-                //String t = args[0].substring(1);
-                //for(int idx = 0; idx<i.length && !done; idx++) {
-                //	if(i[idx].equals(t)) {
-                //		System.out.println("We found it!");
-                //			done=true;
-                //	}
                 if (r.contains(args[0].substring(1))) {
                     System.out.println("We Found it");
                 } else {
@@ -81,22 +73,14 @@ public class StudentList {
                         new InputStreamReader(
                                 new FileInputStream("students.txt")));
                 String D = s.readLine();
-//			char a[] = D.toCharArray();
-//			boolean in_word = false;
-//			int count=0;
-//			for(char c:a) {
-//				if(c ==' ')
-//				{
-//					if (!in_word) {	count++; in_word =true;	}
-//					else { in_word=false;}
-//				}
-//			}
-//			System.out.println(count +" word(s) found " + a.length);
                 String names[] = D.split(",");
                 System.out.println(names.length / 2 + " words found");
             } catch (Exception e) {
             }
             System.out.println("Data Loaded.");
+        }
+        else{
+            System.out.println("Usage:a|c|r|+Studenti|?StudentI");
         }
     }
 }
