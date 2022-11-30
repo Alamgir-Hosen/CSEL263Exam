@@ -3,7 +3,7 @@ import java.text.*;
 import java.util.*;
 
 public class StudentList {
-    static Constants constants = new Constants();
+    static Constants constants = new Constants();//struct
     public static BufferedReader getBufferedReader(){
         try{
             BufferedReader bufferedReader = new BufferedReader(
